@@ -2,8 +2,11 @@
 
 Embedded Xinu, Copyright (C) 2008, 2009, 2010.  All rights reserved.
 
+Modified by Christian Evans, November 2017
+
 Version: 2.01
 
+ 0. Contributions Made
  1. What is Embedded Xinu?
  2. Directory Structure
  3. Prerequisites
@@ -15,6 +18,17 @@ Version: 2.01
     5. Load image over TFTP
  5. Links
 
+## 0. Contributions Made (Novemeber 2017 Update) ##
+
+Working with Professor Bina Ramamurthy from the University at Buffalo, several changes were made to the source xinu code. Among minor edits to the console banner, several shell commands have been created, tested, and implemented:
+- xsh_palindrome: takes in a single argument of letters and returns whether or not the word is a palindrome or can be rearraged as one
+- xsh_schedule: executes a cyclic schedule based on the accompanyting images 'execute1.png' and 'execute2.png'
+- xsh_chat: allows for two users to log into a chat and send messages between terminals
+- xsh_semaphore: demonstrates multiple xinu sempahores modifying a global resource in rotation
+- xsh_mutex: demonstrates a single sempahore and various functions modifying a global resource through use of a mutex
+- (modified) xsh_test: prints a statement back to the console
+
+*More iformation on each shell command can be found in each associated .c file listed in /shell*
 
 ## 1. What is Embedded Xinu? ##
 
